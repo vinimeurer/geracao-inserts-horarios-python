@@ -148,9 +148,9 @@ class HorarioNormal:
             elif line.startswith('Tipo:'):
                 tipo = line.split(': ')[1]
             elif line.startswith('Crédito:'):
-                credito = line.split(': ')[1]  if len(line.split(': ')) > 1 else ''
+                credito = line.split(': ')[1]  if len(line.split(': ')) > 1 else '00:00'
             elif line.startswith('Débito:'):
-                debito = line.split(': ')[1] if len(line.split(': ')) > 1 else ''
+                debito = line.split(': ')[1] if len(line.split(': ')) > 1 else '00:00'
             elif line.startswith('E1:'):
                 e1 = line.split(': ')[1] if len(line.split(': ')) > 1 else ''
             elif line.startswith('S1:'):
